@@ -38,6 +38,7 @@ const Home = () => {
               <li className="mx-5 cursor-pointer">Team</li>
             </ul>
             <div className="">
+              
               <button className="bg-l_blue hover:bg-blue-600 text-white font-semibold py-2 px-6 rounded-md ml-[35rem] mt-2">
                 CONTACT
               </button>
@@ -126,7 +127,9 @@ const Home = () => {
             </div>
           </div>
 
-          <div className="mt5"></div>
+          <div className="mt5">
+
+          </div>
         </main>
       </div>
     </div>
