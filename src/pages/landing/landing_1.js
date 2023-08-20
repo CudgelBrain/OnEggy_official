@@ -1,9 +1,11 @@
 import Image from "next/image";
 import React from "react";
+import Landing2 from "./landing_2";
+import Landing3 from "./landing_3";
 
 const Home = () => {
   return (
-    <div className="landingPage">
+    <div className="landingPage1">
       <div className="relative">
         <img
           src="/Rectangle.png"
@@ -38,8 +40,7 @@ const Home = () => {
               <li className="mx-5 cursor-pointer">Team</li>
             </ul>
             <div className="">
-              
-              <button className="bg-l_blue hover:bg-blue-600 text-white font-semibold py-2 px-6 rounded-md ml-[35rem] mt-2">
+              <button className="bg-l_blue hover:bg-blue-600 text-white font-semibold py-2 px-6 rounded-md ml-[35rem] mt-2 ">
                 CONTACT
               </button>
             </div>
@@ -88,48 +89,38 @@ const Home = () => {
             </div>
           </div>
 
-          <div className="points grid grid-cols-3 text-center">
-            <div className=" cursor-pointer">
-              <h2 className="text-4xl font-semibold hover:text-l_blue">
+          <div className="points mx-20 grid grid-cols-3 justify-start">
+            <div className="relative cursor-pointer ml-16 mb-10 group">
+              <h2 className="text-4xl font-semibold text-black group-hover:text-l_blue">
                 For Startups
               </h2>
-              <p className="mt-6">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam,
-                mollitia. Lorem ipsum dolor sit amet consectetur adipisicing
-                elit. Quaerat architecto iure eos, cupiditate ut voluptates
-                maiores, recusandae ab reiciendis, hic minus eius? Architecto
-                vero laborum pariatur sit explicabo. Expedita, architecto.
+              <p className="mt-3">
+                Interdum et malesuada fames ante…
               </p>
+              <div className="absolute w-[8.5rem] bg-black h-1 rounded-lg mt-2 group-hover:bg-l_blue"></div>
             </div>
-            <div className=" cursor-pointer">
-              <h2 className="text-4xl font-semibold hover:text-l_blue">
+            <div className="relative cursor-pointer ml-16 mb-10 group">
+              <h2 className="text-4xl font-semibold text-black group-hover:text-l_blue">
                 Free Quotation
               </h2>
-              <p className="mt-6">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam,
-                mollitia. Lorem ipsum dolor sit amet consectetur adipisicing
-                elit. Quaerat architecto iure eos, cupiditate ut voluptates
-                maiores, recusandae ab reiciendis, hic minus eius? Architecto
-                vero laborum pariatur sit explicabo. Expedita, architecto.
+              <p className="mt-3">
+                Interdum et malesuada fames ante…
               </p>
+              <div className="absolute w-[8.5rem] bg-black h-1 rounded-lg mt-2 group-hover:bg-l_blue"></div>
             </div>
-            <div className=" cursor-pointer mb-10">
-              <h2 className="text-4xl font-semibold hover:text-l_blue">
+            <div className="relative cursor-pointer ml-16 mb-10 group">
+              <h2 className="text-4xl font-semibold text-black group-hover:text-l_blue">
                 Free Call
               </h2>
-              <p className="mt-6">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam,
-                mollitia. Lorem ipsum dolor sit amet consectetur adipisicing
-                elit. Quaerat architecto iure eos, cupiditate ut voluptates
-                maiores, recusandae ab reiciendis, hic minus eius? Architecto
-                vero laborum pariatur sit explicabo. Expedita, architecto.
+              <p className="mt-3">
+                Interdum et malesuada fames ante…
               </p>
+              <div className="absolute w-[8.5rem] bg-black h-1 rounded-lg mt-2 group-hover:bg-l_blue"></div>
             </div>
           </div>
 
-          <div className="mt5">
-
-          </div>
+      <Landing2/>
+      <Landing3/>
         </main>
       </div>
     </div>
