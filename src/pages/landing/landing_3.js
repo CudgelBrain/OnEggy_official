@@ -2,7 +2,7 @@ import React from "react";
 
 const landing_3 = () => {
   return (
-    <div className="landingPart3 grid grid-cols-2 mt-60 bg-v_l_teal p-20">
+    <div className="landingPart3 grid grid-cols-2 mt-60 bg-v_l_teal p-20 md-">
       <div className="captain">
         <h1 className="text-teal text-5xl font-bold">Meet Our Captain</h1>
         <p className="mt-5 w-[28rem]">
@@ -19,14 +19,12 @@ const landing_3 = () => {
       </div>
 
       <div className="">
+        <img src="./landing_3/angle.png" alt="shape" className="h-80" />
         <img
-          src="./landing_3/angle.png"
-          alt="shape"
-          className="h-96 "
+          src="./landing_3/captain.png"
+          alt="captainImage"
+          className="h-96 float-right"
         />
-        <div className="icons">
-            
-        </div>
       </div>
     </div>
   );

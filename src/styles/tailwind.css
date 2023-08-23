@@ -1,0 +1,11 @@
+.logo_img{
+    height: 55px !important;
+    width: 160px !important;
+    align-self: center;
+}
+
+.project_logo{
+    filter: grayscale(100%);
+    width: 120px !important;
+    height: 50px !important;
+}
