@@ -1,11 +1,31 @@
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 import Projectlogos from "./projectlogos";
 import MarginBotton from "./marginBotton";
 import TechCompo from "./techCompo";
 import GetFreeProp from "./getFreeProp";
+import Headline from "../components/headline";
+import Marksheet from "./marksheet";
+import Testimonials from "./testimonials";
+import ContactUs from './contactUs'
+import Footer from './footer'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
-const Home = () => {
+const Home = (skill) => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleNavbar = () => {
+    setIsOpen(!isOpen);
+  };
+
+  const comments =[
+      "We have been working with Positivus for the past year and have seen a significant increase in website traffic and leads as a result of their efforts. The team is professional, responsive, and truly cares about the success of our business. We highly recommend Positivus to any company looking to grow their online presence.",
+      "We have been working with Positivus for the past year and have seen a significant increase in website traffic and leads as a result of their efforts. The team is professional, responsive, and truly cares about the success of our business. We highly recommend Positivus to any company looking to grow their online presence.",
+      "We have been working with Positivus for the past year and have seen a significant increase in website traffic and leads as a result of their efforts. The team is professional, responsive, and truly cares about the success of our business. We highly recommend Positivus to any company looking to grow their online presence.",
+    ];
+
+
   const skillsArray = [
     {
       title: "Website Development",
@@ -32,7 +52,7 @@ const Home = () => {
       learnMoreLink: "#",
     },
     {
-      title: "QA and Testing",
+      title: "QA & Testing",
       imageSrc: "/landingComponent/5.png",
       icon: "faArrowRight",
       learnMoreLink: "#",
@@ -44,6 +64,14 @@ const Home = () => {
       learnMoreLink: "#",
     },
   ];
+
+  const mapIcons = {
+    faArrowRight,
+  };
+
+  const title = "Services";
+  const desc =
+    "At our firm, we provide a variety of services to assist businesses in growing and succeeding online. These services include";
 
   return (
     <div className="landingPage1">
@@ -67,7 +95,7 @@ const Home = () => {
           </button>
         </ul>
       </nav>
-      <div className="bg-cover bg-right min-h-screen container mx-auto px-20 absolute">
+      <div className="bg-cover bg-right sm:min-h-screen container mx-auto px-6 sm:px-20 absolute">
         <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"></div>
         <main>
           <div className="grid grid-cols-2 gap-2">
@@ -92,14 +120,30 @@ const Home = () => {
           </div>
         </main>
         <Projectlogos />
-        <div className="flex flex-wrap flex-row justify-center mt-10">
+        <Headline title={title} desc={desc} />
+        <div className="flex flex-wrap sm:flex-row justify-center flex-col mt-10 overflow-hidden">
           {skillsArray.map((skill, index) => (
-            <TechCompo key={index} skill={skill} />
+            <TechCompo key={index} skill={skill} index={index} />
           ))}
         </div>
 
+        <div className="flex justify-end overflow-hidden">
+          <div className="mr-5 mt-5 rounded-full p-1 bg-l_black transform -rotate-[30deg] text-[4px] cursor-pointer">
+            <span className="text-white">
+              <FontAwesomeIcon icon={faArrowRight} size="4x" />
+            </span>
+          </div>
+          <div className="mr-8 mt-5 cursor-pointer">
+            <a href={skill.learnMoreLink}>Learn More</a>
+          </div>
+        </div>
+
         <GetFreeProp />
-        <MarginBotton />
+        <Marksheet />
+        <Testimonials comments={comments}/>
+        <ContactUs/>
+        <Footer/>
+        <MarginBotton/>
       </div>
     </div>
   );

@@ -51,15 +51,6 @@ const projectlogos = () => {
           className="project_logo"
         />
       </div>
-      <div className="flex mt-28">
-        <h2 className=" bg-blue font-semibold px-2 py-2 mt-8 rounded-md ml-4 text-3xl">
-          SERVICES
-        </h2>
-        <p className="mt-8 w-[30rem] ml-10">
-          At our firm, we provide a variety of services to assist businesses in
-          growing and succeeding online. These services include:
-        </p>
-      </div>
     </main>
   );
 };

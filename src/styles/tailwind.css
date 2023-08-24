@@ -1,3 +1,4 @@
+
 .logo_img{
     height: 55px !important;
     width: 160px !important;
@@ -9,3 +10,47 @@
     width: 120px !important;
     height: 50px !important;
 }
+
+.service_heading{
+    width: max-content;
+}
+
+.text-shadow-blue{
+    text-shadow: 2px 3px 0px rgba(0,229,216, 1); 
+}
+
+/* Customize the carousel dot container */
+.carousel .thumbs-wrapper {
+    margin-top: 20px;
+  }
+  
+  /* Customize the star carousel dot */
+  .carousel .thumb {
+    width: 15px;
+    height: 15px;
+    margin: 0 5px;
+    position: relative;
+  }
+  
+  .carousel .thumb:before,
+  .carousel .thumb:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+  }
+  
+  /* Create a star shape using borders */
+  .carousel .thumb:before {
+    border-width: 5px 5px 0 5px;
+    border-color: #999 transparent transparent transparent;
+  }
+  
+  .carousel .thumb:after {
+    border-width: 0 5px 5px 5px;
+    border-color: transparent transparent #999 transparent;
+  }
+  
