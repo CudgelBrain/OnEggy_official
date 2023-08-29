@@ -49,8 +49,8 @@ const footer = () => {
             type="email"
             id="email"
             name="email"
-            value={formData.email}
-            onChange={handleChange}
+            value={""}
+            // onChange={handleChange}
             className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring focus:border-blue-300 border-white"
             required
           />
