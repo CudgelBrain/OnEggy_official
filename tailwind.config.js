@@ -17,8 +17,10 @@ module.exports = {
         l_black:"#191A23",
         d_blue:"#28465F",
         greyblack:"#292A32"
-
       },
+      fontFamily:{
+        spaceGrotesk:['Space Grotesk', 'sans-serif']
+      }
     },
     theme: {
       container: {

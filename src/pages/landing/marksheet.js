@@ -14,12 +14,12 @@ const marksheet = () => {
           <h2 className="text-8xl font-bold text-shadow-blue">100%</h2>
           <p className="mt-10 ml-10">Client Satisfaction</p>
         </div>
-          <div className="mt-5 before:bg-white before:absolute before:w-[0.1px] before:h-40" />
+          <div className="mt-5 border-white border-2 before:absolute before:w-[0.1px] before:h-40" />
         <div className="mt-5 mb-5 beforeAfter">
           <h2 className="text-8xl font-bold text-shadow-blue">100+</h2>
           <p className="mt-10 ml-10">Experts in the team</p>
         </div>
-          <div className="mt-5 before:bg-white before:absolute before:w-[0.1px] before:h-40" />
+          <div className="mt-5 border-white border-2 before:absolute before:w-[0.1px] before:h-40" />
         <div className="mt-5 mb-5">
           <h2 className="text-8xl font-bold text-shadow-blue">100+</h2>
           <p className="mt-10 ml-10">Happy Customers</p>

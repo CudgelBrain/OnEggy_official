@@ -7,8 +7,8 @@
 
 .project_logo{
     filter: grayscale(100%);
-    width: 120px !important;
-    height: 50px !important;
+    /* width: 120px !important; */
+    /* height: 50px !important; */
 }
 
 .service_heading{
@@ -54,3 +54,6 @@
     border-color: transparent transparent #999 transparent;
   }
   
+  .theme-heading{
+    font-family: 'Space Grotesk', sans-serif;
+  }

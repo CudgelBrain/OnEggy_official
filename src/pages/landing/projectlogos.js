@@ -4,51 +4,66 @@ import Image from "next/image";
 const projectlogos = () => {
   return (
     <main>
-      <div className="projects flex justify-between max-w-7xl mt-16">
-        <Image
+      <div className="justify-between items-center mt-20 flex max-w-7xl">
+        <img
           src="/projectLogos/mgmt-logo.png"
           alt="Management Logo"
-          width="120"
-          height="50"
           className="project_logo"
           style={{
-            filter: 'grayscale(100%)'
+            filter: 'grayscale(100%)',
+            width:"160px",
+            height:"54px"
           }}
         />
-        <Image
+        <img
           src="/projectLogos/east-mojo-logo.png"
           alt="east-mojo-logo"
-          width="120"
-          height="50"
           className="project_logo"
+          style={{
+            filter: 'grayscale(100%)',
+            width:"203px",
+            height:"44px"
+          }}
         />
-        <Image
+        <img
           src="/projectLogos/numwize-logo.png"
           alt="nuberwize"
-          width="120"
-          height="50"
           className="project_logo"
+          style={{
+            filter: 'grayscale(100%)',
+            width:"83px",
+            height:"67px"
+          }}
         />
-        <Image
+        <img
           src="/projectLogos/smile-logo.png"
           alt="smile"
-          width="120"
-          height="50"
           className="project_logo"
+          style={{
+            filter: 'grayscale(100%)',
+            width:"127px",
+            height:"85px"
+          }}
         />
-        <Image
+        <img
           src="/projectLogos/bit-logo.png"
           alt="bitmemoir"
-          width="120"
-          height="50"
           className="project_logo"
+          style={{
+            filter: 'grayscale(100%)',
+            width:"236px",
+            height:"53px"
+          }}
         />
-        <Image
+        <img
           src="/projectLogos/beyond-logo.png"
           alt="beyond"
-          width="120"
-          height="50"
           className="project_logo"
+          style={{
+            filter: 'grayscale(100%)',
+            width:"128px",
+            height:"72px"
+          }}
         />
       </div>
     </main>

@@ -74,8 +74,8 @@ const Home = (skill) => {
     "At our firm, we provide a variety of services to assist businesses in growing and succeeding online. These services include";
 
   return (
-    <div className="landingPage1">
-      <nav className="py-4 flex justify-between mx-auto max-w-7xl">
+    <div className="landingPage1 max-w-7xl mx-auto">
+      <nav className="py-4 flex justify-between ">
         <Image
           src="/logo.png"
           alt="Logo"
@@ -95,33 +95,33 @@ const Home = (skill) => {
           </button>
         </ul>
       </nav>
-      <div className="bg-cover bg-right sm:min-h-screen container mx-auto px-6 sm:px-20 absolute">
-        <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"></div>
-        <main>
-          <div className="grid grid-cols-2 gap-2">
-            <div className="p-4 pt-12">
-              <h1 className="text-6xl font-semibold">
+          <div className="flex mt-16 sm:max-h-screen justify-between">
+            <div style={{
+              width: '589px'
+            }}>
+              <h1 className="text-6xl font-semibold theme-heading">
                 Transforming Technology with a Human Touch
               </h1>
-              <p className="pt-10 w-7/12">
+              <div className="">
+              <p className="mt-12 text-justify font-spaceGrotesk sm:pr-48 px-0">
                 With OnEggy's IT services, you can leave your mark in the
                 digital world. Transform your company with our cutting-edge and
                 effective digital solutions to set you on the way to success.
               </p>
-              <div className="buttons">
-                <button className="bg-l_black text-white hover:bg-white border hover:border-l_black hover:text-l_black px-6 py-4 mt-8 rounded-xl">
+              </div>
+              <div className="buttons mt-4">
+                <button className="bg-l_black text-white hover:bg-white border hover:border-l_black hover:text-l_black px-6 py-4 mt-8 rounded-xl font-spaceGrotesk">
                   Book a Consultation
                 </button>
               </div>
             </div>
-            <div className="m-auto">
-              <Image src="/ai.png" alt="aiImage" width={450} height={450} />
+            <div className="">
+              <Image src="/ai.png" alt="aiImage" width={500} height={478} />
             </div>
           </div>
-        </main>
-        <Projectlogos />
-        <Headline title={title} desc={desc} />
-        <div className="flex flex-wrap sm:flex-row justify-center flex-col mt-10 overflow-hidden">
+          <Projectlogos />
+          <Headline title={title} desc={desc} />
+        <div className="flex flex-wrap sm:flex-row justify-between flex-col mt-10 overflow-hidden">
           {skillsArray.map((skill, index) => (
             <TechCompo key={index} skill={skill} index={index} />
           ))}
@@ -137,14 +137,13 @@ const Home = (skill) => {
             <a href={skill.learnMoreLink}>Learn More</a>
           </div>
         </div>
-
         <GetFreeProp />
         <Marksheet />
         <Testimonials comments={comments}/>
         <ContactUs/>
         <Footer/>
-        <MarginBotton/>
-      </div>
+        {/* 
+        */}
     </div>
   );
 };
