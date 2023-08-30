@@ -1,14 +1,16 @@
 import Image from "next/image";
 import React, { useState } from "react";
 import Projectlogos from "./projectlogos";
-import MarginBotton from "./marginBotton";
+import Awards from './awards'
 import TechCompo from "./techCompo";
 import GetFreeProp from "./getFreeProp";
 import Headline from "../components/headline";
 import Marksheet from "./marksheet";
 import Testimonials from "./testimonials";
 import ContactUs from './contactUs'
-import Footer from './footer'
+import Footer from '../components/footer'
+import Navbar from '../components/navbar'
+import ConsultationButton from "../components/consultButton";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
@@ -29,37 +31,37 @@ const Home = (skill) => {
   const skillsArray = [
     {
       title: "Website Development",
-      imageSrc: "/landingComponent/1.png",
+      imageSrc: "/home/landingComponent/1.png",
       icon: "faArrowRight",
       learnMoreLink: "#",
     },
     {
       title: "Application Development",
-      imageSrc: "/landingComponent/2.png",
+      imageSrc: "/home/landingComponent/2.png",
       icon: "faArrowRight",
       learnMoreLink: "#",
     },
     {
       title: "UI/UX Designing",
-      imageSrc: "/landingComponent/3.png",
+      imageSrc: "/home/landingComponent/3.png",
       icon: "faArrowRight",
       learnMoreLink: "#",
     },
     {
       title: "DevOps Services",
-      imageSrc: "/landingComponent/4.png",
+      imageSrc: "/home/landingComponent/4.png",
       icon: "faArrowRight",
       learnMoreLink: "#",
     },
     {
       title: "QA & Testing",
-      imageSrc: "/landingComponent/5.png",
+      imageSrc: "/home/landingComponent/5.png",
       icon: "faArrowRight",
       learnMoreLink: "#",
     },
     {
       title: "Cloud Manage Services",
-      imageSrc: "/landingComponent/6.png",
+      imageSrc: "/home/landingComponent/6.png",
       icon: "faArrowRight",
       learnMoreLink: "#",
     },
@@ -75,26 +77,7 @@ const Home = (skill) => {
 
   return (
     <div className="landingPage1">
-      <nav className="py-4 flex justify-between mx-auto max-w-7xl">
-        <Image
-          src="/logo.png"
-          alt="Logo"
-          width="165"
-          height="55"
-          className="logo_img"
-        />
-        <ul className="flex justify-end py-4 align-center">
-          <li className="mx-5 cursor-pointer pt-2">About us</li>
-          <li className="mx-5 cursor-pointer pt-2">Service</li>
-          <li className="mx-5 cursor-pointer pt-2">Team</li>
-          <li className="mx-5 cursor-pointer pt-2">Portfolio</li>
-          <li className="mx-5 cursor-pointer pt-2">Blog</li>
-
-          <button className="text-black py-2 px-6 rounded-md border border-black">
-            Request a Quote
-          </button>
-        </ul>
-      </nav>
+      <Navbar/>
       <div className="bg-cover bg-right sm:min-h-screen container mx-auto px-6 sm:px-20 absolute">
         <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"></div>
         <main>
@@ -108,11 +91,7 @@ const Home = (skill) => {
                 digital world. Transform your company with our cutting-edge and
                 effective digital solutions to set you on the way to success.
               </p>
-              <div className="buttons">
-                <button className="bg-l_black text-white hover:bg-white border hover:border-l_black hover:text-l_black px-6 py-4 mt-8 rounded-xl">
-                  Book a Consultation
-                </button>
-              </div>
+              <ConsultationButton/>
             </div>
             <div className="m-auto">
               <Image src="/ai.png" alt="aiImage" width={450} height={450} />
@@ -120,6 +99,7 @@ const Home = (skill) => {
           </div>
         </main>
         <Projectlogos />
+        <Awards/>
         <Headline title={title} desc={desc} />
         <div className="flex flex-wrap sm:flex-row justify-center flex-col mt-10 overflow-hidden">
           {skillsArray.map((skill, index) => (
@@ -143,7 +123,6 @@ const Home = (skill) => {
         <Testimonials comments={comments}/>
         <ContactUs/>
         <Footer/>
-        <MarginBotton/>
       </div>
     </div>
   );

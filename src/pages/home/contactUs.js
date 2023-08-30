@@ -34,8 +34,8 @@ const contactUs = () => {
   return (
     <div>
       <Headline title={title} desc={desc} />
-      <div className="mt-20 bg-offWhite p-14 rounded-3xl">
-        <div>
+      <div className="mt-20 bg-offWhite p-14 rounded-3xl flex">
+        <div className="w-11/12">
           <div className="flex items-center space-x-4 mb-8">
             <label>
               <input
@@ -110,13 +110,13 @@ const contactUs = () => {
             </button>
           </form>
         </div>
-        <div >
+        <div className="">
           <img
-            src="./contactUs/illustration.png"
+            src="./home/contactUs/illustration.png"
             alt="illustraion"
             width={494}
             height={394}
-            className="float-right -mt-[30rem] h-max -mr-[17.9rem]"
+            className=""  //sahi na lagrhi photo - end tak naa jari  AND website going right, extra right
           />
         </div>
       </div>
