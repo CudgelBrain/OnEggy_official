@@ -1,14 +1,16 @@
 import Image from "next/image";
 import React, { useState } from "react";
 import Projectlogos from "./projectlogos";
-import MarginBotton from "./marginBotton";
+import Awards from './awards'
 import TechCompo from "./techCompo";
 import GetFreeProp from "./getFreeProp";
 import Headline from "../components/headline";
 import Marksheet from "./marksheet";
 import Testimonials from "./testimonials";
 import ContactUs from './contactUs'
-import Footer from './footer'
+import Footer from '../components/footer'
+import Navbar from '../components/navbar'
+import ConsultationButton from "../components/consultButton";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
@@ -29,37 +31,37 @@ const Home = (skill) => {
   const skillsArray = [
     {
       title: "Website Development",
-      imageSrc: "/landingComponent/1.png",
+      imageSrc: "/home/landingComponent/1.png",
       icon: "faArrowRight",
       learnMoreLink: "#",
     },
     {
       title: "Application Development",
-      imageSrc: "/landingComponent/2.png",
+      imageSrc: "/home/landingComponent/2.png",
       icon: "faArrowRight",
       learnMoreLink: "#",
     },
     {
       title: "UI/UX Designing",
-      imageSrc: "/landingComponent/3.png",
+      imageSrc: "/home/landingComponent/3.png",
       icon: "faArrowRight",
       learnMoreLink: "#",
     },
     {
       title: "DevOps Services",
-      imageSrc: "/landingComponent/4.png",
+      imageSrc: "/home/landingComponent/4.png",
       icon: "faArrowRight",
       learnMoreLink: "#",
     },
     {
       title: "QA & Testing",
-      imageSrc: "/landingComponent/5.png",
+      imageSrc: "/home/landingComponent/5.png",
       icon: "faArrowRight",
       learnMoreLink: "#",
     },
     {
       title: "Cloud Manage Services",
-      imageSrc: "/landingComponent/6.png",
+      imageSrc: "/home/landingComponent/6.png",
       icon: "faArrowRight",
       learnMoreLink: "#",
     },
