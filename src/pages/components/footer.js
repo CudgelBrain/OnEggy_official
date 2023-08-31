@@ -10,7 +10,7 @@ import {
 const footer = () => {
   return (
     <div>
-      <div className=" bg-l_black rounded-3xl mt-16">
+      <div className=" bg-l_black rounded-tl-3xl rounded-tr-3xl mt-16">
         <nav className="py-10 flex justify-between">
           <Image
             src="/footer/logoWhite.png"
@@ -40,7 +40,7 @@ const footer = () => {
         </nav>
         <div className="flex ml-10 mr-10 mt-5">
           <div className="w-1/2">
-            <h2 className="bg-l_blue rounded-md p-1 w-24 font-semibold">
+            <h2 className="bg-l_blue rounded-md p-1 w-28 font-semibold">
               Contact us:
             </h2>
             <p className="text-white mt-4">

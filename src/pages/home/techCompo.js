@@ -20,7 +20,7 @@ const techCompo = ({ skill, index}) => {
 
   function textColor(index){
     if(index=== 0 || index === 3 || index === 5){
-      return 'bg-l_blue '
+      return 'bg-blue '
     }
     else
       return 'bg-white'
@@ -59,7 +59,7 @@ const techCompo = ({ skill, index}) => {
     }
 
   return (
-    <div className={`border border-b-[5px] border-l_black rounded-[3rem] ${returnBgColor(index)} flex justify-between my-4 w-full sm:w-[40rem] ${returnMargin(index)}`}>
+    <div className={`border border-b-[5px] border-l_black rounded-[3rem] ${returnBgColor(index)} flex justify-between my-4 w-full sm:w-[38rem] ${returnMargin(index)}`}>
     <div className="">
       <h2 className={`text-3xl font-semibold rounded-md px-1 ${textColor(index)} ml-12 mt-10 service_heading`}>
         {skill.title.split(" ")[0]}

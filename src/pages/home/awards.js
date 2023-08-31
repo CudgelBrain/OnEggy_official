@@ -1,5 +1,6 @@
 import React from 'react'
 import Headline from '../components/headline'
+import Carousel from '../components/awardsCar'
 
 const awards = () => {
     const title = "Certification and Awards"
@@ -8,6 +9,7 @@ const awards = () => {
   return (
     <div>
         <Headline title={title} desc={desc}/>
+        <Carousel/>
     </div>
   )
 }

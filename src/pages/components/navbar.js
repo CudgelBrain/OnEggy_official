@@ -1,16 +1,17 @@
 import React from "react";
 import Image from "next/image";
+import homepage from "../home/landing"
 
 const navbar = () => {
   return (
     <nav className="py-4 flex justify-between mx-auto max-w-7xl">
-        <Image
+        <a href='/'><Image
           src="/logo.png"
           alt="Logo"
           width="165"
           height="55"
-          className="logo_img"
-        />
+          className="logo_img cursor-pointer"
+        /></a>
         <ul className="flex justify-end py-4 align-center">
           <a href="../about/about"><li className="mx-5 cursor-pointer pt-2">About Us</li></a>
           <li className="mx-5 cursor-pointer pt-2">Service</li>

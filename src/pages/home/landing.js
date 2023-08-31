@@ -1,15 +1,15 @@
 import Image from "next/image";
 import React, { useState } from "react";
 import Projectlogos from "./projectlogos";
-import Awards from './awards'
+import Awards from "./awards";
 import TechCompo from "./techCompo";
 import GetFreeProp from "./getFreeProp";
 import Headline from "../components/headline";
 import Marksheet from "./marksheet";
 import Testimonials from "./testimonials";
-import ContactUs from './contactUs'
-import Footer from '../components/footer'
-import Navbar from '../components/navbar'
+import ContactUs from "./contactUs";
+import Footer from "../components/footer";
+import Navbar from "../components/navbar";
 import ConsultationButton from "../components/consultButton";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
@@ -21,12 +21,11 @@ const Home = (skill) => {
     setIsOpen(!isOpen);
   };
 
-  const comments =[
-      "We have been working with Positivus for the past year and have seen a significant increase in website traffic and leads as a result of their efforts. The team is professional, responsive, and truly cares about the success of our business. We highly recommend Positivus to any company looking to grow their online presence.",
-      "We have been working with Positivus for the past year and have seen a significant increase in website traffic and leads as a result of their efforts. The team is professional, responsive, and truly cares about the success of our business. We highly recommend Positivus to any company looking to grow their online presence.",
-      "We have been working with Positivus for the past year and have seen a significant increase in website traffic and leads as a result of their efforts. The team is professional, responsive, and truly cares about the success of our business. We highly recommend Positivus to any company looking to grow their online presence.",
-    ];
-
+  const comments = [
+    "We have been working with Positivus for the past year and have seen a significant increase in website traffic and leads as a result of their efforts. The team is professional, responsive, and truly cares about the success of our business. We highly recommend Positivus to any company looking to grow their online presence.",
+    "We have been working with Positivus for the past year and have seen a significant increase in website traffic and leads as a result of their efforts. The team is professional, responsive, and truly cares about the success of our business. We highly recommend Positivus to any company looking to grow their online presence.",
+    "We have been working with Positivus for the past year and have seen a significant increase in website traffic and leads as a result of their efforts. The team is professional, responsive, and truly cares about the success of our business. We highly recommend Positivus to any company looking to grow their online presence.",
+  ];
 
   const skillsArray = [
     {
@@ -76,30 +75,31 @@ const Home = (skill) => {
     "At our firm, we provide a variety of services to assist businesses in growing and succeeding online. These services include";
 
   return (
-    <div className="landingPage1">
-      <Navbar/>
-      <div className="bg-cover bg-right sm:min-h-screen container mx-auto px-6 sm:px-20 absolute">
-        <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"></div>
-        <main>
-          <div className="grid grid-cols-2 gap-2">
-            <div className="p-4 pt-12">
-              <h1 className="text-6xl font-semibold">
-                Transforming Technology with a Human Touch
-              </h1>
-              <p className="pt-10 w-7/12">
-                With OnEggy's IT services, you can leave your mark in the
-                digital world. Transform your company with our cutting-edge and
-                effective digital solutions to set you on the way to success.
-              </p>
-              <ConsultationButton/>
-            </div>
-            <div className="m-auto">
-              <Image src="/ai.png" alt="aiImage" width={450} height={450} />
-            </div>
+    <div className="landingPage1 max-w-7xl mx-auto">
+      <Navbar />
+      <div className="mt-16 sm:max-h-screen justify-between">
+        <div className="flex">
+          {/*WRAPPER*/}
+          <div style={{ width: "589px" }}>
+            {/*HEADINGS*/}
+            <h1 className="text-6xl font-semibold theme-heading">
+              Transforming Technology with a Human Touch
+            </h1>
+            <p className="mt-12 text-justify font-spaceGrotesk sm:pr-48 px-0">
+              With OnEggy's IT services, you can leave your mark in the digital
+              world. Transform your company with our cutting-edge and effective
+              digital solutions to set you on the way to success.
+            </p>
+            <ConsultationButton />
           </div>
-        </main>
+          <div className="m-auto">
+            {/*IMAGE AI*/}
+            <Image src="/ai.png" alt="aiImage" width={500} height={478} />
+          </div>
+        </div>
+
         <Projectlogos />
-        <Awards/>
+        <Awards />
         <Headline title={title} desc={desc} />
         <div className="flex flex-wrap sm:flex-row justify-center flex-col mt-10 overflow-hidden">
           {skillsArray.map((skill, index) => (
@@ -117,12 +117,11 @@ const Home = (skill) => {
             <a href={skill.learnMoreLink}>Learn More</a>
           </div>
         </div>
-
         <GetFreeProp />
         <Marksheet />
-        <Testimonials comments={comments}/>
-        <ContactUs/>
-        <Footer/>
+        <Testimonials comments={comments} />
+        <ContactUs />
+        <Footer />
       </div>
     </div>
   );

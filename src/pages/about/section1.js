@@ -13,7 +13,6 @@ const section1 = () => {
           market with real clients.
         </p>
         <ConsultationButton />
-        <Footer/>
       </div>
   );
 };
