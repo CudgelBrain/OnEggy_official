@@ -112,7 +112,7 @@ const contactUs = () => {
         </div>
         <div className="">
           <img
-            src="./home/contactUs/illustration.png"
+            src="../home/contactUs/illustration.png"
             alt="illustraion"
             width={494}
             height={394}
