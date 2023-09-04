@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import logo from '../../../public/logo.png';
 import {
   faFacebookF,
   faTwitter,
@@ -13,7 +14,7 @@ const footer = () => {
       <div className=" bg-l_black rounded-3xl mt-16">
         <nav className="py-10 flex justify-between">
           <Image
-            src="/footer/logoWhite.png"
+            src={logo}
             alt="Logo"
             width="165"
             height="55"
