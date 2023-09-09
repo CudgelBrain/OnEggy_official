@@ -38,7 +38,7 @@ const section1 = () => {
                 <h3 className="font-semibold text-lg">{data.name}</h3>
                 <p>{data.position}</p>
               </div>
-              <div className="bg-white p-1 pr-2 pl-2 rounded-full text-l_black">
+              <div className="bg-l_black p-1 pr-2 pl-2 rounded-full text-blue m-auto items-start mb-16">
                 <FontAwesomeIcon icon={data.sns} />
               </div>
             </div>

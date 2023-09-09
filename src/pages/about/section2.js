@@ -8,7 +8,7 @@ const section2 = () => {
   return (
     <div className="flex">
       <div className="w-1/2 p-10">
-        <Headline title={title} width=""/>
+        <Headline title={title}/>
         <p className="mt-8">
           Despite commercial reluctance, Oneggy is devoted to Open Source
           methods in order to produce creative, sustainable alternative

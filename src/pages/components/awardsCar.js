@@ -1,7 +1,11 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 
 const Carousel = () => {
-  const images = ['../home/awards/image 1.png', '../home/awards/image 2.png', '../home/awards/image 3.png'];
+  const images = [
+    "../home/awards/image 1.png",
+    "../home/awards/image 2.png",
+    "../home/awards/image 3.png",
+  ];
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
@@ -13,14 +17,14 @@ const Carousel = () => {
   }, []);
 
   return (
-    <div className="relative overflow-hidden">
-      <div className="carousel-container">
+    <div className="relative">
+      <div className="carousel-container flex ">
         {images.map((image, index) => (
           <div
             key={index}
             className={`carousel-item ${
-              index === currentIndex ? 'active' : ''
-            }`}
+              index === currentIndex ? "active" : ""
+            } image-border-thick mx-5 shadow-right-circle  `}
           >
             <img
               src={image}

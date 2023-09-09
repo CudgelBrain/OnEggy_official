@@ -19,9 +19,9 @@ const navbar = () => {
           <li className="mx-5 cursor-pointer pt-2">About Us</li>
         </a>
         <li className="mx-5 cursor-pointer pt-2">Service</li>
-        <li className="mx-5 cursor-pointer pt-2">Team</li>
-        <li className="mx-5 cursor-pointer pt-2">Portfolio</li>
-        <li className="mx-5 cursor-pointer pt-2">Blog</li>
+        <a href="../team/team"><li className="mx-5 cursor-pointer pt-2">Team</li></a>
+        <a href="../client/client"><li className="mx-5 cursor-pointer pt-2">Portfolio</li></a>
+        <a href="../blog/blog"><li className="mx-5 cursor-pointer pt-2">Blog</li></a>
         <Link href="/contact/section1" className="text-black py-2 px-6 rounded-md border border-black">
             Request a Quote
         </Link>{" "}
