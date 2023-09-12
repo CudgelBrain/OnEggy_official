@@ -10,7 +10,7 @@ const videoSection = () => {
             <img src="../team/video.png" alt="Video"/>
         </div>
         <div  className=''>
-            <img src="../team/figure.png" alt="RIght Image" />
+            <img src="../team/figure.png" alt="Right Image" />
         </div>
     </div>
   )

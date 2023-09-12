@@ -62,6 +62,11 @@
     box-shadow: 5px 3px 0px 0px black; 
 }
 
+.shadow-bottom {
+    box-shadow: 0px 5px 0px -1px black; /* Match the border color and thickness */
+
+}
+
 .shadow-right-circle {
   box-shadow:6px 5px 0px 0px black
 }

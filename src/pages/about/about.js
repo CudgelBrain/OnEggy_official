@@ -64,13 +64,17 @@ const about = () => {
     " This is the stage at which your solution is introduced on the real market with real clients.";
   const showButton = true
   const buttonPlaceholder = "Book a consultation"
-
+  const boxTitle1 = "Your dreams"
+  const boxTitle2 = "empowered."
+  const boxParaTitle = "What we do?"
+  const boxContent = "We create delectable dishes by combining design and technology with additional cheese of awesomeness. With demonstrated experience in accelerating the growth of start-ups by analyzing their needs and delivering the growth package. We make your dreams a reality. We're Oneggy. Our routine is to be ahead of schedule and under budget, to be forward-thinking and to create a seamless digital life. Every concept you bring to the table is nourished and ready to be implemented. With us, you invest in brand building and digital growth rather than design and development."
+ 
   return (
     <div className="bg-cover bg-right sm:min-h-screen container mx-auto px-6 sm:px-20 absolute">
       <Navbar />
       <Section1 head={head} sentence={sentence} showButton={showButton} buttonPlaceholder={buttonPlaceholder}/>
       <Section2 />
-      <Section3 />
+      <Section3 boxTitle1={boxTitle1} boxTitle2={boxTitle2} boxParaTitle={boxParaTitle} boxContent={boxContent}/>
       <Section4 />
       <GetFreeProp />
       <Platforms brands={brands} alternative={alternative} />

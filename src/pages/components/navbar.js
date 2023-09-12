@@ -1,8 +1,13 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/router";
 
 const navbar = () => {
+  const router = useRouter();
+  const isLinkActive = (href) => {
+    return router.pathname === href ? "font-bold" : "font-normal"; // Customize the active and inactive link styles
+  };
   return (
     <nav className="py-4 flex justify-between mx-auto max-w-7xl">
       <a href="/">
@@ -15,24 +20,45 @@ const navbar = () => {
         />
       </a>
       <ul className="flex justify-end py-4">
-        <a href="../about/about">
-          <li className="mx-5 cursor-pointer pt-2">About Us</li>
-        </a>
-        <a href="../services/services">
-          <li className="mx-5 cursor-pointer pt-2">Service</li>
-        </a>
-        <a href="../team/team">
-          <li className="mx-5 cursor-pointer pt-2">Team</li>
-        </a>
-        <a href="../client/client">
-          <li className="mx-5 cursor-pointer pt-2">Portfolio</li>
-        </a>
-        <a href="../blog/blog">
-          <li className="mx-5 cursor-pointer pt-2">Blog</li>
-        </a>
+        <Link
+          href="/about/about"
+          className={`mx-5 cursor-pointer pt-2 ${isLinkActive("/about/about")}`}
+        >
+          About Us
+        </Link>
+        <Link
+          href="/services/services"
+          className={`mx-5 cursor-pointer pt-2 ${isLinkActive(
+            "/services/services"
+          )}`}
+        >
+          Service
+        </Link>
+        <Link
+          href="/team/team"
+          className={`mx-5 cursor-pointer pt-2 ${isLinkActive("/team/team")}`}
+        >
+          Team
+        </Link>
+        <Link
+          href="/client/client"
+          className={`mx-5 cursor-pointer pt-2 ${isLinkActive(
+            "/client/client"
+          )}`}
+        >
+          Portfolio
+        </Link>
+        <Link
+          href="/blog/blog"
+          className={`mx-5 cursor-pointer pt-2 ${isLinkActive("/blog/blog")}`}
+        >
+          Blog
+        </Link>
         <Link
           href="/contact/contact"
-          className="text-black py-2 px-6 rounded-md border border-black"
+          className={`text-black py-2 px-6 rounded-md border border-black  ${isLinkActive(
+            "/contact/contact"
+          )}`}
         >
           Request a Quote
         </Link>{" "}

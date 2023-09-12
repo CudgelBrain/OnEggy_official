@@ -120,7 +120,7 @@ const Home = (skill) => {
         </div>
         <GetFreeProp />
         <Marksheet />
-        <Testimonials comments={comments} />
+        <Testimonials comments={...comments} />
         <ContactUs />
         <Footer />
       </div>
