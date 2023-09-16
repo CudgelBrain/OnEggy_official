@@ -25,16 +25,26 @@ const projectlogos = () => {
             height:"44px"
           }}
         />
-        <img
-          src="/home/projectLogos/numwize-logo.png"
-          alt="nuberwize"
+         <img
+          src="/home/projectLogos/beyond-logo.png"
+          alt="beyond"
           className="project_logo"
           style={{
             filter: 'grayscale(100%)',
-            width:"83px",
-            height:"67px"
+            width:"128px",
+            height:"72px"
           }}
         />
+          <img
+            src="/home/projectLogos/bit-logo.png"
+            alt="bitmemoir"
+            className="project_logo"
+            style={{
+              filter: 'grayscale(100%)',
+              width:"236px",
+              height:"53px"
+            }}
+          />
         <img
           src="/home/projectLogos/smile-logo.png"
           alt="smile"
@@ -46,25 +56,16 @@ const projectlogos = () => {
           }}
         />
         <img
-          src="/home/projectLogos/bit-logo.png"
-          alt="bitmemoir"
+          src="/home/projectLogos/numwize-logo.png"
+          alt="nuberwize"
           className="project_logo"
           style={{
             filter: 'grayscale(100%)',
-            width:"236px",
-            height:"53px"
+            width:"83px",
+            height:"67px"
           }}
         />
-        <img
-          src="/home/projectLogos/beyond-logo.png"
-          alt="beyond"
-          className="project_logo"
-          style={{
-            filter: 'grayscale(100%)',
-            width:"128px",
-            height:"72px"
-          }}
-        />
+       
       </div>
     </main>
   );

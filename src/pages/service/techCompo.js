@@ -48,13 +48,13 @@ const techCompo = () => {
   return (
     <div>
       <Headline title={title} desc={desc} />
-      <div>
+    
         <div className="flex flex-wrap sm:flex-row justify-center mt-10">
           {compoArray.map((head, index) => (
             <Section5 key={index} head={head} index={index} />
           ))}
         </div>
-      </div>
+   
     </div>
   );
 };

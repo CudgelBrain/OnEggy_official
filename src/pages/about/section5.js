@@ -14,7 +14,7 @@ const section5 = ({ head, index }) => {
   }
 
   return (
-    <div className="mt-6 mx-6">
+    <div className="mt-6 mr-6 ">
       <div className="bg-l_black rounded-[3rem] flex p-10 border border-b-[5px] border-l_black justify-between m-auto w-full h-full sm:w-[38rem]">
         <div className={`w-48 m-auto ${textColor(index)}`}>
           <img src={head.image} alt={head.alt} />

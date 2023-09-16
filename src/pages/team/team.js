@@ -23,7 +23,7 @@ const team = () => {
         buttonPlaceholder={buttonPlaceholder}
       />
       <VideoSection />
-      <CarouselImages />
+      {/* <CarouselImages /> */}
       <TeamCompo />
       <Footer/>
     </div>
