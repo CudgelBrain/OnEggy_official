@@ -62,7 +62,7 @@ const footer = () => {
               placeholder="Email"
               // value={formData.email}
               // onChange={handleChange}
-              className="w-full px-3 h-14 py-3 mt-10 mb-10 border placeholder-white bg-greyblack rounded-lg focus:outline-none focus:ring focus:border-blue-300 border-white"
+              className="w-full px-3 h-14 py-3 my-10 border placeholder-white bg-greyblack rounded-lg focus:outline-none focus:ring focus:border-blue-300 border-white"
               required
             />
             <button className="bg-l_blue text-black hover:bg-l_black border hover:border-l_blue hover:text-white px-3 h-14 py-3 mt-10 mb-10  rounded-xl w-full items-center">
@@ -71,7 +71,7 @@ const footer = () => {
           </div>
         </div>
           <hr className="mx-auto w-[94%]"/>
-        <footer className="text-white m-10 flex space-x-8 pb-10">
+        <footer className="text-white m-10 flex  space-x-8 pb-10">
           <p>&copy; {new Date().getFullYear()} OnEggy. All Rights Reserved.</p>
           <a href="#" className="underline">
             Privacy Policy
