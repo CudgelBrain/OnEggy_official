@@ -8,13 +8,13 @@ const awards = () => {
     "At our firm, we provide a variety of services to assist businesses in growing and succeeding online. These services include:";
 
   return (
-    <div>
+    <div className="">
       <Headline title={title} desc={desc} />
-      <div className="flex mt-16">
+      <div className="flex mt-16 ">
         <div>
           <Carousel />
         </div>
-        <div className="w-2/5 p-5 mt-5">
+        <div className="hidden p-5 mt-5">
           <p>
             We create delectable dishes by combining design and technology with
             additional cheese of awesomeness. With demonstrated experience in

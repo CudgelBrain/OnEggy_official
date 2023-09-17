@@ -17,11 +17,11 @@ const footer = () => {
       <div>
         <nav className="py-4 flex justify-between items-center mx-auto max-w-7xl mt-16 rounded-3xl">
           <img
-            src="/logo.png"
+            src="/logoWhite.png"
             alt="Logo"
             width="265"
             height="109"
-            className="logo_img"
+            className="logo_img"  
           />
           <ul className="flex justify-center py-4 text-white underline">
             <li className="mx-5 cursor-pointer pt-2">About us</li>

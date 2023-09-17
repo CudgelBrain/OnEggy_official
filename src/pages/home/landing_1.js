@@ -80,7 +80,7 @@ const Home = (skill) => {
       <nav className="py-4 flex justify-between ">
         <Image
           src="/logo.png"
-          alt="Logo"
+          alt="Logo"  
           width="165"
           height="55"
           className="logo_img"
