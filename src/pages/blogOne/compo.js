@@ -3,11 +3,11 @@ import React from "react";
 const compo = ({head,title,content}) => {
   return (
     <div>
-      <div>
-        <div>
+      <div className="flex m-10">
+        <div className="">
           <img src="../about/people.png" alt="Image" className=" mx-auto" />
         </div>
-        <div>
+        <div className="ml-10">
           <h2 className="bg-blue font-semibold px-2 py-1 rounded-lg text-4xl w-max">
             {head}
           </h2>

@@ -60,13 +60,13 @@ const teamCompo = () => {
     <div>
       <Headline title={title} desc={desc} />
       <div className="mb-20">
-        <div className="mt-10 grid grid-cols-3 w-full">
+        <div className="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 w-full">
           {profile.map((data, index) => (
             <div
               key={index}
               className="border border-d_blue rounded-[3rem] p-10 mx-6 mt-10 shadow-bottom"
             >
-              <div className="flex">
+              <div className="flex sm:justify-evenly">
                 <div>
                   <img
                     src={data.image}
@@ -75,7 +75,7 @@ const teamCompo = () => {
                     height={102}
                   />
                 </div>
-                <div className="ml-[8px] mr-[10px] items-end mt-12">
+                <div className="ml-[8px] mr-[10px] items-end sm:mt-0 mt-12 lg:mt-14">
                   <h3 className="font-semibold text-lg">{data.name}</h3>
                   <p>{data.position}</p>
                 </div>

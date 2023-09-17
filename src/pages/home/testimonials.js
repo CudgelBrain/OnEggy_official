@@ -3,7 +3,14 @@ import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Headline from "../components/headline";
 
-const testimonials = ({comments}) => {
+const Testimonials = () => {
+
+  const comments = [
+    "We have been working with Positivus for the past year and have seen a significant increase in website traffic and leads as a result of their efforts. The team is professional, responsive, and truly cares about the success of our business. We highly recommend Positivus to any company looking to grow their online presence.",
+    "We have been working with Positivus for the past year and have seen a significant increase in website traffic and leads as a result of their efforts. The team is professional, responsive, and truly cares about the success of our business. We highly recommend Positivus to any company looking to grow their online presence.",
+    "We have been working with Positivus for the past year and have seen a significant increase in website traffic and leads as a result of their efforts. The team is professional, responsive, and truly cares about the success of our business. We highly recommend Positivus to any company looking to grow their online presence.",
+  ];
+
   const title = "Testimonials";
   const desc =
     "Hear from our happy customers: Learn more about our digital services by reading our Testimonials";
@@ -18,7 +25,7 @@ const testimonials = ({comments}) => {
           showThumbs={true}
           infiniteLoop={true}
         >
-          {comments.map((comment, index) => (
+          {comments?.map((comment, index) => (
             <div key={index} className=" border border-gray-300 rounded-3xl text-white relative bg-l_black p-20">
               <p className="bg-d_blue rounded-3xl p-10 w-96 h-full ml-96">
                   {comment}
@@ -38,4 +45,4 @@ const testimonials = ({comments}) => {
   );
 };
 
-export default testimonials;
+export default Testimonials;

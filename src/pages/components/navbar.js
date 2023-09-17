@@ -32,7 +32,7 @@ const navbar = () => {
             "/services/services"
           )}`}
         >
-          Service
+          Services
         </Link>
         <Link
           href="/team/team"

@@ -8,6 +8,7 @@ import GetFreeProp from "../home/getFreeProp";
 import Marksheet from "../home/marksheet";
 import Section3 from "../about/section3"
 import TechCompo from "./techCompo";
+import TechnologyStack from "./technologyStack";
 
 const service = () => {
   const head = "Web Development Making Benchmarking Products";
@@ -55,7 +56,8 @@ const service = () => {
         </div>
       </div>
       <TechCompo />
-      {/* <Testimonials /> */}
+      <TechnologyStack/>
+      <Testimonials />
       <GetFreeProp />
       <Marksheet />
       <Footer />
