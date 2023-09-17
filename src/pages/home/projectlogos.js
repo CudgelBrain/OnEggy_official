@@ -6,7 +6,7 @@ const projectlogos = () => {
     <main>
       <div className="justify-between items-center mt-20 flex max-w-7xl">
         <img
-          src="/projectLogos/mgmt-logo.png"
+          src="/home/projectLogos/mgmt-logo.png"
           alt="Management Logo"
           className="project_logo"
           style={{
@@ -16,7 +16,7 @@ const projectlogos = () => {
           }}
         />
         <img
-          src="/projectLogos/east-mojo-logo.png"
+          src="/home/projectLogos/east-mojo-logo.png"
           alt="east-mojo-logo"
           className="project_logo"
           style={{
@@ -26,7 +26,7 @@ const projectlogos = () => {
           }}
         />
         <img
-          src="/projectLogos/numwize-logo.png"
+          src="/home/projectLogos/numwize-logo.png"
           alt="nuberwize"
           className="project_logo"
           style={{
@@ -36,7 +36,7 @@ const projectlogos = () => {
           }}
         />
         <img
-          src="/projectLogos/smile-logo.png"
+          src="/home/projectLogos/smile-logo.png"
           alt="smile"
           className="project_logo"
           style={{
@@ -46,7 +46,7 @@ const projectlogos = () => {
           }}
         />
         <img
-          src="/projectLogos/bit-logo.png"
+          src="/home/projectLogos/bit-logo.png"
           alt="bitmemoir"
           className="project_logo"
           style={{
@@ -56,7 +56,7 @@ const projectlogos = () => {
           }}
         />
         <img
-          src="/projectLogos/beyond-logo.png"
+          src="/home/projectLogos/beyond-logo.png"
           alt="beyond"
           className="project_logo"
           style={{

@@ -57,3 +57,7 @@
   .theme-heading{
     font-family: 'Space Grotesk', sans-serif;
   }
+
+.shadow-right-bottom {
+    box-shadow: 5px 3px 0px 0px black; 
+}

@@ -20,7 +20,7 @@ const techCompo = ({ skill, index}) => {
 
   function textColor(index){
     if(index=== 0 || index === 3 || index === 5){
-      return 'bg-l_blue '
+      return 'bg-blue '
     }
     else
       return 'bg-white'

@@ -14,7 +14,7 @@ const getFreeProp = () => {
         </button>
       </div>
       <div className="float-right -mt-80">
-        <img src="./home/getFreeProps/stars.png" alt="star frame" width={494} height={394}/>
+        <img src="../home/getFreeProps/stars.png" alt="star frame" width={494} height={394}/>
       </div>
     </div>
   );
