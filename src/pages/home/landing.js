@@ -73,6 +73,7 @@ const Home = (skill) => {
   const title = "Services";
   const desc =
     "At our firm, we provide a variety of services to assist businesses in growing and succeeding online. These services include";
+  const buttonPlaceholder = "Book a Consultataion"
 
   return (
     <div className="landingPage1 max-w-7xl mx-auto">
@@ -90,7 +91,7 @@ const Home = (skill) => {
               world. Transform your company with our cutting-edge and effective
               digital solutions to set you on the way to success.
             </p>
-            <ConsultationButton />
+            <ConsultationButton buttonPlaceholder={buttonPlaceholder}/>
           </div>
           <div className="m-auto">
             {/*IMAGE AI*/}
@@ -119,7 +120,7 @@ const Home = (skill) => {
         </div>
         <GetFreeProp />
         <Marksheet />
-        <Testimonials comments={comments} />
+        <Testimonials comments={...comments} />
         <ContactUs />
         <Footer />
       </div>

@@ -34,7 +34,7 @@ const contactUs = () => {
   return (
     <div>
       <Headline title={title} desc={desc} />
-      <div className="mt-20 bg-offWhite p-14 rounded-3xl flex">
+      <div className="mt-20 bg-offWhite p-14 rounded-3xl flex relative overflow-hidden">
         <div className="w-11/12">
           <div className="flex items-center space-x-4 mb-8">
             <label>
@@ -116,7 +116,7 @@ const contactUs = () => {
             alt="illustraion"
             width={494}
             height={394}
-            className=""  //sahi na lagrhi photo - end tak naa jari  AND website going right, extra right
+            className="absolute -right-[232px] top-[63px]"  
           />
         </div>
       </div>

@@ -11,7 +11,7 @@ import {
 const footer = () => {
   return (
     <div>
-      <div className=" bg-l_black rounded-tl-3xl rounded-tr-3xl mt-16">
+      <div className=" bg-l_black rounded-tl-[3rem] rounded-tr-[3rem] mt-10">
         <nav className="py-10 flex justify-between">
           <Image
             src={logo}
@@ -65,13 +65,13 @@ const footer = () => {
               className="w-full px-3 h-14 py-3 my-10 border placeholder-white bg-greyblack rounded-lg focus:outline-none focus:ring focus:border-blue-300 border-white"
               required
             />
-            <button className="bg-l_blue text-black hover:bg-l_black border hover:border-l_blue hover:text-white px-3 h-14 py-3 mt-10 mb-10  rounded-xl w-full items-center">
+            <button className="bg-l_blue text-black hover:bg-l_black border hover:border-l_blue hover:text-white px-3 h-14 py-3 mt-10 mb-10 rounded-xl w-full items-center">
               Subscribe to blogs
             </button>
           </div>
         </div>
           <hr className="mx-auto w-[94%]"/>
-        <footer className="text-white m-10 flex  space-x-8 pb-10">
+        <footer className="text-white ml-10 mt-10 flex space-x-8 pb-10">
           <p>&copy; {new Date().getFullYear()} OnEggy. All Rights Reserved.</p>
           <a href="#" className="underline">
             Privacy Policy

@@ -1,6 +1,6 @@
 import React from "react";
 
-const headline = (props,width) => {
+const headline = (props) => {
   return (
     <div>
       <div className={`flex sm:flex-row flex-col sm:item-start items-center mt-16 w-[${props.width}]`}>

@@ -3,7 +3,7 @@ import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Headline from "../components/headline";
 
-const testimonials = ({ comments }) => {
+const testimonials = ({comments}) => {
   const title = "Testimonials";
   const desc =
     "Hear from our happy customers: Learn more about our digital services by reading our Testimonials";

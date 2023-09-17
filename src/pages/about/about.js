@@ -1,7 +1,7 @@
 import React from "react";
 import GetFreeProp from "../home/getFreeProp";
 import Navbar from "../components/navbar";
-import Section1 from "./section1";
+import Section1 from "../components/mainHeadline";
 import Section2 from "./section2";
 import Section3 from "./section3";
 import Section4 from "./section4";
@@ -59,19 +59,28 @@ const about = () => {
   const title = "Our core values";
   const desc =
     "We investigate the basics of innovation while retaining the synergy that channels implementation.";
-
+  const head = "Tested & Derived Solutions";
+  const sentence =
+    " This is the stage at which your solution is introduced on the real market with real clients.";
+  const showButton = true
+  const buttonPlaceholder = "Book a consultation"
+  const boxTitle1 = "Your dreams"
+  const boxTitle2 = "empowered."
+  const boxParaTitle = "What we do?"
+  const boxContent = "We create delectable dishes by combining design and technology with additional cheese of awesomeness. With demonstrated experience in accelerating the growth of start-ups by analyzing their needs and delivering the growth package. We make your dreams a reality. We're Oneggy. Our routine is to be ahead of schedule and under budget, to be forward-thinking and to create a seamless digital life. Every concept you bring to the table is nourished and ready to be implemented. With us, you invest in brand building and digital growth rather than design and development."
+ 
   return (
     <div className="bg-cover bg-right sm:min-h-screen container mx-auto px-6 sm:px-20 absolute">
       <Navbar />
-      <Section1 />
+      <Section1 head={head} sentence={sentence} showButton={showButton} buttonPlaceholder={buttonPlaceholder}/>
       <Section2 />
-      <Section3 />
+      <Section3 boxTitle1={boxTitle1} boxTitle2={boxTitle2} boxParaTitle={boxParaTitle} boxContent={boxContent}/>
       <Section4 />
       <GetFreeProp />
       <Platforms brands={brands} alternative={alternative} />
       <Headline title={title} desc={desc} />
       <div className="flex flex-wrap sm:flex-row justify-center flex-col mt-10 overflow-hidden">
-        {compoArray.map((head, index) => (
+        {compoArray.map((head, index) => ( 
           <Section5 key={index} head={head} index={index} />
         ))}
       </div>
