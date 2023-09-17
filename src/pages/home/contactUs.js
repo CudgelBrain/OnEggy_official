@@ -32,34 +32,33 @@ const contactUs = () => {
   };
 
   return (
-    <div>
+    <div className="px-4 sm:px-0">
       <Headline title={title} desc={desc} />
-      <div className="mt-20 bg-offWhite p-14 rounded-3xl flex relative overflow-hidden">
-        <div className="w-11/12">
-          <div className="flex items-center space-x-4 mb-8">
-            <label>
-              <input
+      <div className="sm:mt-20 mt-10 bg-offWhite p-14 rounded-3xl flex relative overflow-hidden">
+        <div className="sm:w-11/12 w-full ">
+          <div className="flex justify-center sm:justify-start items-center space-x-4 mb-8">
+            <label className="flex"> 
+              <input 
                 type="radio"
                 value="sayHi"
                 checked={selectedOption === "sayHi"}
                 onChange={handleOptionChange}
-                className="mr-2"
+                className="mr-2 w-6 h-6"
               />
-              Say Hi
+              <div>Say Hi</div>
             </label>
-            <label>
+            <label className="flex">
               <input
                 type="radio"
                 value="getQuote"
                 checked={selectedOption === "getQuote"}
                 onChange={handleOptionChange}
-                className="mr-2"
+                className="mr-2 ml-8 sm:ml-0 w-6 h-6"
               />
-              Get a Quote
+              <div>Get a Qoute</div>
             </label>
           </div>
-
-          <form className="w-3/5" onSubmit={handleSubmit}>
+          <form className="sm:w-3/5" onSubmit={handleSubmit}>
             <div className="mb-4">
               <label htmlFor="name" className="block mb-2 text-sm font-medium">
                 Name
@@ -88,7 +87,7 @@ const contactUs = () => {
                 required
               />
             </div>
-            <div className="mb-4">
+            <div className="sm:mb-4">
               <label
                 htmlFor="message"
                 className="block mb-2 text-sm font-medium"
@@ -105,13 +104,15 @@ const contactUs = () => {
                 required
               />
             </div>
-            <button className="bg-l_black text-white hover:bg-white border hover:border-l_black hover:text-l_black px-6 py-4 mt-8 rounded-xl w-full">
+            <button className="bg-l_black text-white hover:bg-white border hover:border-l_black hover:text-l_black px-6 py-4 mt-8 rounded-xl w-full hidden sm:block"
+              
+            >
               Send Message
             </button>
           </form>
         </div>
-        <div className="">
-          <img
+        <div className="hidden sm:block">
+          <img 
             src="../home/contactUs/illustration.png"
             alt="illustraion"
             width={494}
@@ -120,6 +121,11 @@ const contactUs = () => {
           />
         </div>
       </div>
+      <button className="bg-l_black text-white hover:bg-white border hover:border-l_black hover:text-l_black px-6 py-4 mt-8 rounded-xl w-full sm:relative sm:hidden"
+              
+              >
+                Send Message
+              </button>
     </div>
   );
 };

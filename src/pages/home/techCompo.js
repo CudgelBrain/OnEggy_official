@@ -52,23 +52,23 @@ const techCompo = ({ skill, index}) => {
 
     function returnMargin(index){
       if(index == 0 || index == 2 || index === 4){
-        return 'mr-4'
-      }else{
-        return 'ml-4'
+        return 'sm:mr-4 mr-0'
+      }else{ 
+        return 'sm:ml-4 ml-0'
       }
     }
 
   return (
-    <div className={`border border-b-[5px] border-l_black rounded-[3rem] ${returnBgColor(index)} flex justify-between my-4 w-full sm:w-[38rem] ${returnMargin(index)}`}>
+    <div className={`border border-b-[5px] border-l_black rounded-[3rem] ${returnBgColor(index)} flex sm:justify-between my-4 px-4 sm:px-0-full w-full sm:w-[38rem] ${returnMargin(index)}`}>
     <div className="">
-      <h2 className={`text-3xl font-semibold rounded-md px-1 ${textColor(index)} ml-12 mt-10 service_heading`}>
+      <h2 className={`sm:text-3xl text-xl font-semibold rounded-md px-1 ${textColor(index)} sm:ml-12 mt-10 service_heading`}>
         {skill.title.split(" ")[0]}
       </h2>
-      <h2 className={`text-3xl font-semibold rounded-md px-1 ${textColor(index)} ml-12 service_heading`}>
+      <h2 className={`sm:text-3xl text-xl font-semibold rounded-md px-1 ${textColor(index)} sm:ml-12 service_heading`}>
         {skill.title.split(" ").length == 2 ? skill.title.split(" ")[1] : skill.title.split(" ").slice(1).join(" ")}
       </h2>
       <div className="flex">
-        <span className={`rounded-full bg-white transform -rotate-[30deg] text-[4px] ml-12 p-1 mt-32 mb-10 ${arrowBg(index)} ${arrowColor(index)}`}>
+        <span className={`rounded-full bg-white transform -rotate-[30deg] text-[4px] md:ml-12 p-1 mt-32 mb-10 ${arrowBg(index)} ${arrowColor(index)}`}>
           <FontAwesomeIcon icon={mapIcons[skill.icon]} size="4x" />
         </span>
         <a
@@ -83,9 +83,14 @@ const techCompo = ({ skill, index}) => {
         <img
           src={skill.imageSrc}
           alt={skill.title}
-          width={270}
-          height={250}
-          className="self-center mr-10"
+          width={0}
+          height={0}
+          style={{
+            // width:'100%',
+            height:'auto'
+          }}
+          sizes="100vw"
+          className="self-center sm:mr-10 w-60 h-24"
         />
         </div>
     </div>

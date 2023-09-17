@@ -78,7 +78,7 @@ const Home = (skill) => {
   return (
     <div className="landingPage1 max-w-7xl mx-auto">
       <Navbar />
-      <div className="mt-16 sm:max-h-screen justify-between">
+      <div className="mt-16 sm:max-h-screen justify-between px-4">
         <div className="flex">
           {/*WRAPPER*/}
           <div style={{ width: "589px" }}>
@@ -86,29 +86,34 @@ const Home = (skill) => {
             <h1 className="text-6xl font-semibold theme-heading">
               Transforming Technology with a Human Touch
             </h1>
+            <Image src="/ai.png" alt="aiImage" width={0}
+              height={0}
+              sizes="100vw"
+              className="md:hidden"
+              style={{ width: '80%', height: 'auto', margin:'auto'}} />
             <p className="mt-12 text-justify font-spaceGrotesk sm:pr-48 px-0">
               With OnEggy's IT services, you can leave your mark in the digital
               world. Transform your company with our cutting-edge and effective
               digital solutions to set you on the way to success.
             </p>
-            <ConsultationButton buttonPlaceholder={buttonPlaceholder}/>
+            <ConsultationButton buttonPlaceholder={buttonPlaceholder} />
           </div>
-          <div className="m-auto">
+          <div className="ml-auto md:block hidden">
             {/*IMAGE AI*/}
             <Image src="/ai.png" alt="aiImage" width={500} height={478} />
           </div>
         </div>
 
         <Projectlogos />
-        <Awards />
+        {/* <Awards /> */}
         <Headline title={title} desc={desc} />
-        <div className="flex flex-wrap sm:flex-row justify-center flex-col mt-10 overflow-hidden">
+        <div className="flex flex-wrap sm:flex-row justify-center flex-col px-6 sm:px-0 mt-10 overflow-hidden">
           {skillsArray.map((skill, index) => (
             <TechCompo key={index} skill={skill} index={index} />
           ))}
         </div>
 
-        <div className="flex justify-end overflow-hidden">
+        <div className="md:flex justify-end  hidden overflow-hidden">
           <div className="mr-5 mt-5 rounded-full p-1 bg-l_black transform -rotate-[30deg] text-[4px] cursor-pointer">
             <span className="text-white">
               <FontAwesomeIcon icon={faArrowRight} size="4x" />

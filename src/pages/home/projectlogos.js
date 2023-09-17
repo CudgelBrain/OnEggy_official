@@ -4,7 +4,7 @@ import Image from "next/image";
 const projectlogos = () => {
   return (
     <main>
-      <div className="justify-between items-center mt-20 flex max-w-7xl">
+      <div className="mt-20 flex flex-row justify-between items-center flex-wrap">
         <img
           src="/home/projectLogos/mgmt-logo.png"
           alt="Management Logo"
