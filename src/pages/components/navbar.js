@@ -57,6 +57,7 @@ const navigation = [
   { name: 'Services', href: '/services/services', current: false },
   { name: 'Team', href: '/team/team', current: false },
   { name: 'Portfolio', href: '/client/client', current: false },
+  { name: 'Blogs', href: '/blog/blog', current: false },
   { name: 'Contact', href: '/contact/contact', current: false },
 ]
 
@@ -173,3 +174,4 @@ export default function Navbar() {
     </Disclosure>
   )
 }
+

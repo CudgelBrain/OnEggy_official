@@ -78,8 +78,8 @@ const Home = (skill) => {
   return (
     <div className="landingPage1 max-w-7xl mx-auto">
       <Navbar />
-      <div className="mt-16 sm:max-h-screen justify-between px-4">
-        <div className="flex">
+      <div className="mt-16 sm:max-h-screen justify-between">
+        <div className="flex px-4">
           {/*WRAPPER*/}
           <div style={{ width: "589px" }}>
             {/*HEADINGS*/}

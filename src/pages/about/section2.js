@@ -6,10 +6,20 @@ const section2 = () => {
   const title = "Who we are?";
 
   return (
-    <div className="flex">
-      <div className="w-1/2 p-10">
+    <div className="flex sm:flex-row flex-col">
+      <div className="w-full relative sm:hidden mt-16 pr-8 -left-8">
+          <Image
+          src="/about/people.png"
+          alt="People Image"
+          sizes="100vw"
+          width={0}
+          height={0}
+          className="w-full h-auto"
+        />
+        </div>
+      <div className="sm:w-1/2 p-10">
         <Headline title={title}/>
-        <p className="mt-8">
+        <p className="sm:mt-8">
           Despite commercial reluctance, Oneggy is devoted to Open Source
           methods in order to produce creative, sustainable alternative
           applications. Our company's objective is to promote the widespread use
@@ -24,7 +34,7 @@ const section2 = () => {
             of an effective IT strategy based on a solid business model.
         </p>
       </div>
-      <div className="w-1/2 p-10 mt-24">
+      <div className="sm:w-1/2 hidden sm:block p-10 mt-24">
         <Image
           src="/about/people.png"
           alt="People Image"

@@ -29,7 +29,7 @@ const section1 = () => {
       <div className="flex mt-10 justify-center">
         <div className="flex">
           {profile.map((data) => (
-            <div className=" border border-b-[5px] border-l_black rounded-[3rem] p-10 flex mx-6 mt-4">
+            <div className=" border border-b-[5px] border-l_black rounded-[3rem] p-10 flex-col sm:flex-row flex mx-6 mt-4">
               <div>
                 <img src={data.image} alt={data.alt} width={105} height={102}/>
               </div>{" "}
@@ -45,7 +45,7 @@ const section1 = () => {
           ))}
         </div>
       </div>
-      <ContactUs />
+      <ContactUs /> 
       <Footer />
     </div>
   );
