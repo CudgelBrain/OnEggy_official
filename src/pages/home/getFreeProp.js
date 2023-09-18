@@ -2,10 +2,10 @@ import React from "react";
 
 const getFreeProp = () => {
   return (
-    <div className="mt-20 bg-offWhite sm:p-14 p-10 rounded-3xlf flex justify-between relative">
+    <div className="mt-20 bg-offWhite sm:p-14 p-10 rounded-3xl sm:rounded-3xl flex justify-center sm:justify-between relative">
       <div className="flex flex-col sm:block">
-        <h2 className="text-3xl text-center sm:text-left font-semibold">Let's get things begun</h2>
-        <p className="mt-8 w-96">
+        <h2 className="text-3xl text-center justify-center sm:text-left font-semibold">Let's get things begun</h2>
+        <p className="mt-8 w-96 text-center sm:text-left">
           Contact us today to learn more about how our digital services may
           assist your company in growing and succeeding online
         </p>

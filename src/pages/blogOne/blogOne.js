@@ -43,26 +43,93 @@ const blogOne = () => {
             <Compo key={index} {...props} />
           ))}
         </div>
-        <div className="text-d_blue mt-10">
+        <div className="text-d_blue mt-10 w-1/4">
           <h2 className="text-3xl font-bold">Categories</h2>
           <ul className="font-semibold text-3xl mt-4 flex-col flex-wrap">
-            <li className="border rounded-xl px-6 py-6 m-auto my-4 hover:bg-l_blue cursor-pointer"><img src="/blog/1.png" alt="Seeing Something???" width={38} className="float-left mr-4"/>Web Design</li>
-            <li className="border rounded-xl px-6 py-6 m-auto my-4 hover:bg-l_blue cursor-pointer"><img src="/blog/2.png" alt="Seeing Something???" width={38} className="float-left mr-4"/>Development</li>
-            <li className="border rounded-xl px-6 py-6 m-auto my-4 hover:bg-l_blue cursor-pointer"><img src="/blog/3.png" alt="Seeing Something???" width={38} className="float-left mr-4"/>UI/UX</li>
-            <li className="border rounded-xl px-6 py-6 m-auto my-4 hover:bg-l_blue cursor-pointer"><img src="/blog/4.png" alt="Seeing Something???" width={38} className="float-left mr-4"/>Branding</li>
+            <li className="border rounded-xl px-6 py-6 m-auto my-4 hover:bg-l_blue cursor-pointer">
+              <img
+                src="/blog/1.png"
+                alt="Seeing Something???"
+                width={38}
+                className="float-left mr-4"
+              />
+              Web Design
+            </li>
+            <li className="border rounded-xl px-6 py-6 m-auto my-4 hover:bg-l_blue cursor-pointer">
+              <img
+                src="/blog/2.png"
+                alt="Seeing Something???"
+                width={38}
+                className="float-left mr-4"
+              />
+              Development
+            </li>
+            <li className="border rounded-xl px-6 py-6 m-auto my-4 hover:bg-l_blue cursor-pointer">
+              <img
+                src="/blog/3.png"
+                alt="Seeing Something???"
+                width={38}
+                className="float-left mr-4"
+              />
+              UI/UX
+            </li>
+            <li className="border rounded-xl px-6 py-6 m-auto my-4 hover:bg-l_blue cursor-pointer">
+              <img
+                src="/blog/4.png"
+                alt="Seeing Something???"
+                width={38}
+                className="float-left mr-4"
+              />
+              Branding
+            </li>
           </ul>
           <h3 className="text-3xl font-bold">All Tags</h3>
-          <ul>
-            <li className="border rounded-xl">Business</li>
-            <li className="border rounded-xl">Experience</li>
-            <li className="border rounded-xl">Screen</li>
-            <li className="border rounded-xl">Technology</li>
-            <li className="border rounded-xl">Marketing</li>
-            <li className="border rounded-xl">Life</li>
+          <ul className=" flex flex-row flex-wrap  ">
+            <li className="border rounded-[3rem] py-3 px-8 my-2 mx-1">
+              Business
+            </li>
+            <li className="border rounded-[3rem] py-3 px-8 my-2 mx-1">
+              Experience
+            </li>
+            <li className="border rounded-[3rem] py-3 px-8 my-2 mx-1">
+              Screen
+            </li>
+            <li className="border rounded-[3rem] py-3 px-8 my-2 mx-1">
+              Technology
+            </li>
+            <li className="border rounded-[3rem] py-3 px-8 my-2 mx-1">
+              Marketing
+            </li>
+            <li className="border rounded-[3rem] py-3 px-8 my-2 mx-1">Life</li>
           </ul>
         </div>
       </div>
       <GetFreeProp />
+      <div>
+        <div className="flex m-10">
+          <div className="w-4/5">
+            <img src="../about/people.png" alt="Image" className=" mx-auto" />
+          </div>
+          <div className="ml-10 w-11/12">
+            <h2 className="bg-blue font-semibold px-2 py-1 rounded-lg text-4xl w-max">
+              Business
+            </h2>
+            <h3 className="font-semibold text-4xl mt-3">
+              Top 6 free website mockuptools 2022
+            </h3>
+            <p className="mt-3 mb-5 text-lg">
+              We are a team of Artists, Innovators & Strategists who left their
+              ordinary life to invent and reinvent the common. Our Passion for
+              technologies changes problems into opportunities. Our heart is
+              full of creative juice that shapes ideas, Our mind is on a quest
+              to transform the ordinary into the extraordinary. This is our code
+              that energizes deep-rooted human desires and makes people pursue
+              their dreams. We took an oath to stick to the Code and call
+              ourselves Code Theorem.
+            </p>
+          </div>
+        </div>
+      </div>
       <Footer />
     </div>
   );

@@ -26,8 +26,8 @@ const section1 = () => {
     <div className="max-w-7xl mx-auto">
       <Navbar />
       <h2 className="text-5xl text-center font-semibold mt-10">Let's Talk</h2>
-      <div className="flex mt-10 justify-center">
-        <div className="flex">
+      <div className="sm:flex grid sm:grid-cols-2 lg:grid-cols-3 mt-10 justify-center">
+        <div className="sm:flex">
           {profile.map((data) => (
             <div className=" border border-b-[5px] border-l_black rounded-[3rem] p-10 flex mx-6 mt-4">
               <div>

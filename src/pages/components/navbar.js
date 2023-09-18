@@ -6,9 +6,9 @@
 // const navbar = () => {
 
 //   return (
-//   
-//      
-//      
+//
+//
+//
 //         <Link
 //           href="/about/about"
 //           className={`mx-5 cursor-pointer pt-2 ${isLinkActive("/about/about")}`}
@@ -29,46 +29,41 @@
 //         >
 //           Team
 //         </Link>
-//       
+//
 //         <Link
 //           href="/blog/blog"
 //           className={`mx-5 cursor-pointer pt-2 ${isLinkActive("/blog/blog")}`}
 //         >
 //           Blog
 //         </Link>
-//      
+//
 //       </ul>
 //     </nav>
 //   );
 // };
-
 // export default navbar;
 
-
-import { Fragment } from 'react'
-import { useRouter } from 'next/router'
-import { Disclosure, Menu, Transition } from '@headlessui/react'
-import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
-import Image from 'next/image'
-import Link from 'next/link'
+import { Fragment } from "react";
+import { useRouter } from "next/router";
+import { Disclosure, Menu, Transition } from "@headlessui/react";
+import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
+import Image from "next/image";
+import Link from "next/link";
 
 const navigation = [
-  { name: 'About Us', href: '/about/about', current: true },
-  { name: 'Services', href: '/services/services', current: false },
-  { name: 'Team', href: '/team/team', current: false },
-  { name: 'Portfolio', href: '/client/client', current: false },
-  { name: 'Contact', href: '/contact/contact', current: false },
-]
-
-
-
+  { name: "About Us", href: "/about/about", current: true },
+  { name: "Services", href: "/services/services", current: false },
+  { name: "Team", href: "/team/team", current: false },
+  { name: "Portfolio", href: "/client/client", current: false },
+  { name: "Blog", href: "/blog/blog", current: false },
+  { name: "Contact", href: "/contact/contact", current: false },
+];
 
 function classNames(...classes) {
-  return classes.filter(Boolean).join(' ')
+  return classes.filter(Boolean).join(" ");
 }
 
 export default function Navbar() {
-
   const router = useRouter();
 
   const isLinkActive = (href) => {
@@ -84,18 +79,20 @@ export default function Navbar() {
               <div className="flex flex-shrink-0 items-center lg:hidden">
                 <a href="/">
                   <Image
-                    src="/logo.jpg"
+                    src="/logo.png"
                     alt="Logo"
                     width="110"
                     height="55"
-                  // className="logo_img cursor-pointer w-32"
+                    // className="logo_img cursor-pointer w-32"
                   />
                 </a>
               </div>
               <div className="absolute inset-y-0 right-0 flex items-center lg:hidden order-2">
                 {/* Mobile menu button*/}
-                <Disclosure.Button className="relative inline-flex items-center justify-end 
-                rounded-md p-2 text-black hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+                <Disclosure.Button
+                  className="relative inline-flex items-center justify-end 
+                rounded-md p-2 text-black hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+                >
                   <span className="absolute -inset-0.5" />
                   <span className="sr-only">Open main menu</span>
                   {open ? (
@@ -113,7 +110,7 @@ export default function Navbar() {
                       alt="Logo"
                       width="150"
                       height="55"
-                    // className="logo_img cursor-pointer w-32"
+                      // className="logo_img cursor-pointer w-32"
                     />
                   </a>
                 </div>
@@ -121,29 +118,32 @@ export default function Navbar() {
                 <div className="hidden lg:ml-6 sm:block">
                   <ul className="flex justify-end py-4">
                     {navigation.map((item) => {
-                      console.log(item.href)
+                      console.log(item.href);
 
-                      if (item.href !== '/contact/contact')
-                        return <Link
-                          href={item.href}
-                          className={`mx-5 cursor-pointer pt-2 ${isLinkActive(
-                            item.href
-                          )}`}
-                        >
-                          {item.name}
-                        </Link>
+                      if (item.href !== "/contact/contact")
+                        return (
+                          <Link
+                            href={item.href}
+                            className={`mx-5 cursor-pointer pt-2 ${isLinkActive(
+                              item.href
+                            )}`}
+                          >
+                            {item.name}
+                          </Link>
+                        );
                       else {
-                        return <Link
-                          href="/contact/contact"
-                          className={`text-black py-2 px-6 rounded-md border border-black  ${isLinkActive(
-                            "/contact/contact"
-                          )}`}
-                        >
-                          Request a Quote
-                        </Link>
+                        return (
+                          <Link
+                            href="/contact/contact"
+                            className={`text-black py-2 px-6 rounded-md border border-black  ${isLinkActive(
+                              "/contact/contact"
+                            )}`}
+                          >
+                            Request a Quote
+                          </Link>
+                        );
                       }
-                    }
-                    )}
+                    })}
                   </ul>
                 </div>
               </nav>
@@ -158,10 +158,12 @@ export default function Navbar() {
                   as="a"
                   href={item.href}
                   className={classNames(
-                    item.href === router.pathname ? 'bg-[#37FFF4] text-black' : 'text-gray-700 hover:bg-[#37FFF4] hover:text-white',
-                    'block rounded-md px-3 py-2 text-base font-medium'
+                    item.href === router.pathname
+                      ? "bg-[#37FFF4] text-black"
+                      : "text-gray-700 hover:bg-[#37FFF4] hover:text-white",
+                    "block rounded-md px-3 py-2 text-base font-medium"
                   )}
-                  aria-current={item.current ? 'page' : undefined}
+                  aria-current={item.current ? "page" : undefined}
                 >
                   {item.name}
                 </Disclosure.Button>
@@ -171,5 +173,5 @@ export default function Navbar() {
         </>
       )}
     </Disclosure>
-  )
+  );
 }
